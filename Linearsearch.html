@@ -1,0 +1,29 @@
+function main() {
+    var size;
+
+    window.alert("Hoe groot is de lijst?");
+    size = Number(window.prompt('Enter a value for size'));
+    var list = createArray(size);
+    var i;
+
+    for (i = 0; i <= size - 1; i++) {
+        list[i] = Math.floor(Math.random() * 100);
+    }
+    var zoek;
+
+    window.alert("Welk cijfer wilt u zoeken?");
+    zoek = Number(window.prompt('Enter a value for zoek'));
+    var n;
+
+    n = 0;
+    for (i = 0; i <= size - 1; i++) {
+        if (zoek == list[i]) {
+            window.alert("Dit cijfer is te vinden op index: " + i);
+            n = n + 1;
+        }
+    }
+    if (n > 0) {
+    } else {
+        window.alert("Dit cijfer zit niet in de lijst.");
+    }
+}
