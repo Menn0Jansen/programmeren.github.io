@@ -33,7 +33,19 @@
     } else {
         window.alert("Dit cijfer zit niet in de lijst.");
     }
-}
+    }
+
+    // Functie om een array van de opgegeven grootte te maken
+        function createArray(size) {
+            var arr = new Array(size);
+            return arr;
+    }
+
+    // Roep de main-functie aan wanneer het HTML-document is geladen
+    window.onload = function() {
+    main();
+    };
+
   </script>
  </body>
 </html>
